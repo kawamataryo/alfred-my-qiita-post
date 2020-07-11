@@ -1,0 +1,20 @@
+{
+  "name": "alfred-my-qiita-post",
+  "version": "1.0.0",
+  "description": "Alfred Workflow to search for your own Qiita posts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kawamataryo/alfred-my-qiita-post.git"
+  },
+  "keywords": [],
+  "author": "Ryo Kawamata <ba068082@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kawamataryo/alfred-my-qiita-post/issues"
+  },
+  "homepage": "https://github.com/kawamataryo/alfred-my-qiita-post#readme"
+}
