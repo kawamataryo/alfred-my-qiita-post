@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/kawamataryo/alfred-my-qiita-post/issues"
   },
-  "homepage": "https://github.com/kawamataryo/alfred-my-qiita-post#readme"
+  "homepage": "https://github.com/kawamataryo/alfred-my-qiita-post#readme",
+  "dependencies": {
+    "alfy": "^0.9.1"
+  }
 }
