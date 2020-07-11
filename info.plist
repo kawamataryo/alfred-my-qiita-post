@@ -4,8 +4,24 @@
 <dict>
 	<key>bundleid</key>
 	<string>gif-optimizer</string>
+	<key>category</key>
+	<string>Tools</string>
 	<key>connections</key>
-	<dict/>
+	<dict>
+		<key>6D6ABC40-4213-48AE-A029-93B3AAACC90A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D7E268FC-398D-43A6-B826-8E9606E3C932</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
 	<key>createdby</key>
 	<string>ryoKawamata</string>
 	<key>description</key>
@@ -53,7 +69,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Search words</string>
+				<string>Search your posts</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -65,6 +81,25 @@
 			<string>6D6ABC40-4213-48AE-A029-93B3AAACC90A</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string></string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>D7E268FC-398D-43A6-B826-8E9606E3C932</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -78,7 +113,23 @@
 			<key>ypos</key>
 			<integer>290</integer>
 		</dict>
+		<key>D7E268FC-398D-43A6-B826-8E9606E3C932</key>
+		<dict>
+			<key>xpos</key>
+			<integer>525</integer>
+			<key>ypos</key>
+			<integer>290</integer>
+		</dict>
 	</dict>
+	<key>variables</key>
+	<dict>
+		<key>apiToken</key>
+		<string>32ceea3c4b4425391f8c9c9550a6d6925982bf56</string>
+		<key>username</key>
+		<string>ryo2132</string>
+	</dict>
+	<key>version</key>
+	<string></string>
 	<key>webaddress</key>
 	<string></string>
 </dict>
