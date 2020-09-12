@@ -1,6 +1,6 @@
 {
   "name": "alfred-my-qiita",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Alfred Workflow to search for your own Qiita posts.",
   "main": "index.js",
   "scripts": {
