@@ -1,35 +1,34 @@
-const alfy = require("alfy");
+import alfy from "alfy";
+import { fetchAllPosts } from "./lib/fetchAllPosts";
 
-const options = {
-  headers: {
-    Authorization: `Bearer ${process.env.apiToken}`,
-  },
-};
+const token = process.env.apiToken;
+const username = process.env.username;
 
-const user = await alfy.fetch(
-  `https://qiita.com/api/v2/users/${process.env.username}`,
-  options
-);
-const maxPage = Math.ceil(user.items_count / 100);
+const createResponse = (title, subtitle, url) => {
+  return {
+    title,
+    subtitle,
+    arg: url,
+    icon: {
+      type: "png",
+      path: "icon.png",
+    }
+  };
+}
 
-let data = [];
-await Promise.all(
-  [...Array(maxPage)].map(async (_, i) => {
-    res = await alfy.fetch(
-      `https://qiita.com/api/v2/authenticated_user/items?page=${i + 1}&per_page=100`,
-      options
-    );
-    data.push(...res);
-  })
-);
+(async () => {
+  const posts = await fetchAllPosts(username, token);
+  if(alfy.input.length > 1) {
+    const items = alfy.inputMatches(posts, "title").map(
+        (p) => createResponse(p.title, p.body, p.url));
 
-const items = alfy.inputMatches(data, "title").map((element) => ({
-  title: element.title,
-	arg: element.url,
-	icon: {
-		type: "png",
-		path: "icon.png"
-	}
-}));
-
-alfy.output(items);
+    if (!items.length) {
+      alfy.output(
+          [createResponse("The requested post was not found. ⚠️", "", "")]);
+      return;
+    }
+    alfy.output(items);
+  } else {
+    alfy.output([createResponse("Loading...", "", "")])
+  }
+})()
