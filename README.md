@@ -22,7 +22,7 @@ Set env to your Qiita params.
 
 |name|value|
 |---|---|
-|apiToken | Set Qiita API token.|
+|API_TOKEN | Set Qiita API token.|
 |USER_NAME | Set Your Qiita user name.|
 
 <img width="800" alt="スクリーンショット 2020-09-12 11 06 48" src="https://user-images.githubusercontent.com/11070996/92984844-5c848480-f4e8-11ea-8e1d-cc571668b04c.png">
