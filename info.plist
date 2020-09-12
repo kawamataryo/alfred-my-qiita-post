@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>gif-optimizer</string>
+	<string>alfred-my-qiita</string>
 	<key>category</key>
 	<string>Tools</string>
 	<key>connections</key>
@@ -29,7 +29,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>alfred-my-qiita-posts</string>
+	<string>alfred-my-qiita</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -124,13 +124,18 @@
 	<key>variables</key>
 	<dict>
 		<key>API_TOKEN</key>
-		<string></string>
+		<string>32ceea3c4b4425391f8c9c9550a6d6925982bf56</string>
 		<key>USER_NAME</key>
-		<string></string>
+		<string>ryo2132</string>
 	</dict>
+	<key>variablesdontexport</key>
+	<array>
+		<string>API_TOKEN</string>
+		<string>USER_NAME</string>
+	</array>
 	<key>version</key>
-	<string></string>
+	<string>1.0.0</string>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/kawamataryo/alfred-my-qiita-post</string>
 </dict>
 </plist>

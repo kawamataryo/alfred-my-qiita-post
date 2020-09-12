@@ -15,7 +15,7 @@ $ npm install --global alfred-my-qiita
 ```
 
 #### Manually
-[download the workflow directly](https://github.com/kawamataryo/alfred-my-qiita/releases).
+[download the workflow directly](https://github.com/kawamataryo/alfred-my-qiita-post/releases).
 
 ## Setup
 Set env to your Qiita params.
