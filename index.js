@@ -21,9 +21,9 @@ const createItem = (title, subtitle, url) => {
     alfy.output([createItem("Please set environment variable. ⚠️", "Set API_TOKEN and USER_NAME to workflow environment variable", "")])
   }
 
-  const posts = await fetchAllPosts(username, token);
-
   if(alfy.input.length > 1) {
+    const posts = await fetchAllPosts(username, token);
+
     const items = alfy.inputMatches(posts, "title").map(
         (p) => createItem(p.title, p.body, p.url));
 
